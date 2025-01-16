@@ -210,7 +210,6 @@ def check_powerup():
 
     if active_powerup == "plusfive":
         elapsed_time = pygame.time.get_ticks() - powerup_timer
-        print(elapsed_time)
         if elapsed_time > 2000:
             active_powerup = None
     elif active_powerup == "highjump":
