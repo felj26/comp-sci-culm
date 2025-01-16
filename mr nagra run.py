@@ -377,11 +377,6 @@ def boss():
         active_block = None
 
     block_rect = pygame.Rect(block_x, block_y, 100, 70)
-    
-    mouse_pos = pygame.mouse.get_pos()
-    if block_rect.collidepoint(mouse_pos):
-        pygame.draw.rect(screen, black, (0, 0, 50, 50))
-        pygame.display.flip()
 
     death = pygame.mixer.Sound("C:/Users/Felix/Downloads/mr nagra run/death.mp3")
     
